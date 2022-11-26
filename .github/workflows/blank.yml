@@ -35,7 +35,6 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
   deployment:
-    if: github.repository == 'aikumiso/production'
     runs-on: ubuntu-latest
     environment: production
     steps:
