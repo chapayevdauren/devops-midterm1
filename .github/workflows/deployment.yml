@@ -1,15 +1,15 @@
-name: Deployment
+name: 'Deployment'
 
 on:
   push:
     branches:
-      - main
+      - 'main'
 
 jobs:
   deployment:
-    runs-on: ubuntu-latest
-    environment: production
-    concurrency: production
+    runs-on: 'ubuntu-latest'
+    environment: 'production'
+    concurrency: 'production'
     steps:
-      - name: deploy
+      - name: 'deploy'
     
