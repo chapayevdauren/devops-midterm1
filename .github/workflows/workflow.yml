@@ -1,0 +1,16 @@
+on:
+  push:
+    branches:
+      - production
+
+jobs:
+  deploy:
+    name: deploy, push
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Checkout production
+      uses: actions/checkout@v2
+
+    - name: Deploy
+      run: echo "deployed"
