@@ -6,12 +6,13 @@ on:
       - production
 
 jobs:
-  deployment:
-    runs-on: ubuntu-latest
-    environment: production
-    concurrency: production
-    steps:
-      - name: deploy
-        run: echo "Midterm1"
+  prod-check:
+      if: ${{ github.ref_name == 'production' }}
+      runs-on: ubuntu-latest
+      environment: production
+      concurrency: production
+      steps:
+        - name: deploy
+          run: echo "Midterm1"
         
     
