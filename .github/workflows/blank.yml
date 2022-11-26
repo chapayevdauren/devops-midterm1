@@ -36,6 +36,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
   deployment:
+    if: github.ref == 'refs/heads/production'
     runs-on: ubuntu-latest
     environment: production
     steps:
