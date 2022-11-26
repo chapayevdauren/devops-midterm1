@@ -3,9 +3,7 @@ name: CI/CD
 on:
   push:
   pull_request:
-    branches:
-      - deployment
-
+  
 jobs:
   build:
 
@@ -20,6 +18,7 @@ jobs:
           
   deploy:
    runs-on: ubuntu-latest
+   if: github.ref == 'refs/heads/production'
    steps:
      - name: Print hello world
        run: python -c "print('Hello, World!')"
