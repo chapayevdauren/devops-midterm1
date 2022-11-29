@@ -1,0 +1,482 @@
+sayana@sayana-ASUS-TUF-Gaming-F15-FX506HC-FX506HC:~$ docker [option] [command] [arguments]
+docker: '[option]' is not a docker command.
+See 'docker --help'
+sayana@sayana-ASUS-TUF-Gaming-F15-FX506HC-FX506HC:~$ docker
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Options:
+      --config string      Location of client config files (default "/home/sayana/.docker")
+  -c, --context string     Name of the context to use to connect to the daemon (overrides
+                           DOCKER_HOST env var and default context set with "docker context use")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket(s) to connect to
+  -l, --log-level string   Set the logging level ("debug"|"info"|"warn"|"error"|"fatal")
+                           (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default
+                           "/home/sayana/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default "/home/sayana/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default "/home/sayana/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  app*        Docker App (Docker Inc., v0.9.1-beta3)
+  builder     Manage builds
+  buildx*     Docker Buildx (Docker Inc., v0.9.1-docker)
+  compose*    Docker Compose (Docker Inc., v2.12.1)
+  config      Manage Docker configs
+  container   Manage containers
+  context     Manage contexts
+  dev*        Docker Dev Environments (Docker Inc., v0.0.3)
+  extension*  Manages Docker extensions (Docker Inc., v0.2.13)
+  image       Manage images
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  sbom*       View the packaged-based Software Bill Of Materials (SBOM) for an image (Anchore Inc., 0.6.0)
+  scan*       Docker Scan (Docker Inc., v0.21.0)
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+
+To get more help with docker, check out our guides at https://docs.docker.com/go/guides/
+sayana@sayana-ASUS-TUF-Gaming-F15-FX506HC-FX506HC:~$ docker docker-subcommand --help
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Options:
+      --config string      Location of client config files (default "/home/sayana/.docker")
+  -c, --context string     Name of the context to use to connect to the daemon (overrides
+                           DOCKER_HOST env var and default context set with "docker context use")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket(s) to connect to
+  -l, --log-level string   Set the logging level ("debug"|"info"|"warn"|"error"|"fatal")
+                           (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default
+                           "/home/sayana/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default "/home/sayana/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default "/home/sayana/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  app*        Docker App (Docker Inc., v0.9.1-beta3)
+  builder     Manage builds
+  buildx*     Docker Buildx (Docker Inc., v0.9.1-docker)
+  compose*    Docker Compose (Docker Inc., v2.12.1)
+  config      Manage Docker configs
+  container   Manage containers
+  context     Manage contexts
+  dev*        Docker Dev Environments (Docker Inc., v0.0.3)
+  extension*  Manages Docker extensions (Docker Inc., v0.2.13)
+  image       Manage images
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  sbom*       View the packaged-based Software Bill Of Materials (SBOM) for an image (Anchore Inc., 0.6.0)
+  scan*       Docker Scan (Docker Inc., v0.21.0)
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+
+To get more help with docker, check out our guides at https://docs.docker.com/go/guides/
+sayana@sayana-ASUS-TUF-Gaming-F15-FX506HC-FX506HC:~$ docker info
+Client:
+ Context:    desktop-linux
+ Debug Mode: false
+ Plugins:
+  app: Docker App (Docker Inc., v0.9.1-beta3)
+  buildx: Docker Buildx (Docker Inc., v0.9.1-docker)
+  compose: Docker Compose (Docker Inc., v2.12.1)
+  dev: Docker Dev Environments (Docker Inc., v0.0.3)
+  extension: Manages Docker extensions (Docker Inc., v0.2.13)
+  sbom: View the packaged-based Software Bill Of Materials (SBOM) for an image (Anchore Inc., 0.6.0)
+  scan: Docker Scan (Docker Inc., v0.21.0)
+
+Server:
+ Containers: 1
+  Running: 1
+  Paused: 0
+  Stopped: 0
+ Images: 1
+ Server Version: 20.10.20
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Native Overlay Diff: true
+  userxattr: false
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 io.containerd.runtime.v1.linux runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: 9cd3357b7fd7218e4aec3eae239db1f68a5a6ec6
+ runc version: v1.1.4-0-g5fd4c4d
+ init version: de40ad0
+ Security Options:
+  seccomp
+   Profile: default
+  cgroupns
+ Kernel Version: 5.15.49-linuxkit
+ Operating System: Docker Desktop
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 6
+ Total Memory: 3.684GiB
+ Name: docker-desktop
+ ID: YWQB:LI2K:4KJC:WTXQ:KDR6:46ZD:6OPW:RZO5:GSY4:RX47:CJRV:7JIC
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ HTTP Proxy: http.docker.internal:3128
+ HTTPS Proxy: http.docker.internal:3128
+ No Proxy: hubproxy.docker.internal
+ Registry: https://index.docker.io/v1/
+ Labels:
+ Experimental: false
+ Insecure Registries:
+  hubproxy.docker.internal:5000
+  127.0.0.0/8
+ Live Restore Enabled: false
+
+sayana@sayana-ASUS-TUF-Gaming-F15-FX506HC-FX506HC:~$ docker run hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+2db29710123e: Pull complete 
+Digest: sha256:e18f0a777aefabe047a671ab3ec3eed05414477c951ab1a6f352a06974245fe7
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+sayana@sayana-ASUS-TUF-Gaming-F15-FX506HC-FX506HC:~$ docker search ubuntu
+NAME                             DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
+ubuntu                           Ubuntu is a Debian-based Linux operating sys…   15177     [OK]       
+websphere-liberty                WebSphere Liberty multi-architecture images …   290       [OK]       
+ubuntu-upstart                   DEPRECATED, as is Upstart (find other proces…   112       [OK]       
+neurodebian                      NeuroDebian provides neuroscience research s…   94        [OK]       
+ubuntu/nginx                     Nginx, a high-performance reverse proxy & we…   65                   
+open-liberty                     Open Liberty multi-architecture images based…   56        [OK]       
+ubuntu-debootstrap               DEPRECATED; use "ubuntu" instead                49        [OK]       
+ubuntu/apache2                   Apache, a secure & extensible open-source HT…   47                   
+ubuntu/squid                     Squid is a caching proxy for the Web. Long-t…   42                   
+ubuntu/mysql                     MySQL open source fast, stable, multi-thread…   38                   
+ubuntu/prometheus                Prometheus is a systems and service monitori…   32                   
+ubuntu/bind9                     BIND 9 is a very flexible, full-featured DNS…   31                   
+kasmweb/ubuntu-bionic-desktop    Ubuntu productivity desktop for Kasm Workspa…   31                   
+ubuntu/postgres                  PostgreSQL is an open source object-relation…   22                   
+ubuntu/redis                     Redis, an open source key-value store. Long-…   15                   
+ubuntu/kafka                     Apache Kafka, a distributed event streaming …   13                   
+ubuntu/prometheus-alertmanager   Alertmanager handles client alerts from Prom…   8                    
+ubuntu/grafana                   Grafana, a feature rich metrics dashboard & …   6                    
+ubuntu/zookeeper                 ZooKeeper maintains configuration informatio…   5                    
+ubuntu/memcached                 Memcached, in-memory keyvalue store for smal…   5                    
+ubuntu/telegraf                  Telegraf collects, processes, aggregates & w…   4                    
+ubuntu/dotnet-deps               Chiselled Ubuntu for self-contained .NET & A…   4                    
+ubuntu/dotnet-runtime            Chiselled Ubuntu runtime image for .NET apps…   4                    
+ubuntu/cortex                    Cortex provides storage for Prometheus. Long…   3                    
+ubuntu/cassandra                 Cassandra, an open source NoSQL distributed …   2                    
+sayana@sayana-ASUS-TUF-Gaming-F15-FX506HC-FX506HC:~$ docker pull ubuntu
+Using default tag: latest
+latest: Pulling from library/ubuntu
+e96e057aae67: Pull complete 
+Digest: sha256:4b1d0c4a2d2aaf63b37111f34eb9fa89fa1bf53dd6e4ca954d47caebca4005c2
+Status: Downloaded newer image for ubuntu:latest
+docker.io/library/ubuntu:latest
+sayana@sayana-ASUS-TUF-Gaming-F15-FX506HC-FX506HC:~$ docker images
+REPOSITORY    TAG          IMAGE ID       CREATED         SIZE
+ubuntu        latest       a8780b506fa4   4 days ago      77.8MB
+python        3.8-alpine   dd03d220144d   13 days ago     46.8MB
+hello-world   latest       feb5d9fea6a5   13 months ago   13.3kB
+sayana@sayana-ASUS-TUF-Gaming-F15-FX506HC-FX506HC:~$ docker run -it ubuntu
+root@cd43fb20feb1:/# apt update
+Get:1 http://archive.ubuntu.com/ubuntu jammy InRelease [270 kB]
+Get:2 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Get:3 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [578 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [114 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [99.8 kB]
+Get:6 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [480 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [17.5 MB]                      
+Get:8 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [756 kB]             
+Get:9 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [4644 B]           
+Get:10 http://archive.ubuntu.com/ubuntu jammy/restricted amd64 Packages [164 kB]                    
+Get:11 http://archive.ubuntu.com/ubuntu jammy/main amd64 Packages [1792 kB]                         
+Get:12 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [266 kB]                    
+Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [880 kB]                  
+Get:14 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [16.9 kB]           
+Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [528 kB]            
+Get:16 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [939 kB]              
+Get:17 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [3175 B]                
+Get:18 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [7290 B]            
+Fetched 24.5 MB in 1min 57s (209 kB/s)                                                              
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+All packages are up to date.
+root@cd43fb20feb1:/# apt install nodejs
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  ca-certificates javascript-common libbrotli1 libc-ares2 libicu70 libjs-highlight.js libnghttp2-14
+  libnode72 libuv1 nodejs-doc openssl
+Suggested packages:
+  apache2 | lighttpd | httpd npm
+The following NEW packages will be installed:
+  ca-certificates javascript-common libbrotli1 libc-ares2 libicu70 libjs-highlight.js libnghttp2-14
+  libnode72 libuv1 nodejs nodejs-doc openssl
+0 upgraded, 12 newly installed, 0 to remove and 0 not upgraded.
+Need to get 26.1 MB of archives.
+After this operation, 93.0 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 openssl amd64 3.0.2-0ubuntu1.7 [1183 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy/main amd64 ca-certificates all 20211016 [148 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy/main amd64 libicu70 amd64 70.1-2 [10.6 MB]             
+Get:4 http://archive.ubuntu.com/ubuntu jammy/main amd64 libnghttp2-14 amd64 1.43.0-1build3 [76.3 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy/main amd64 libuv1 amd64 1.43.0-1 [93.1 kB]             
+Get:6 http://archive.ubuntu.com/ubuntu jammy/main amd64 javascript-common all 11+nmu1 [5936 B]      
+Get:7 http://archive.ubuntu.com/ubuntu jammy/main amd64 libbrotli1 amd64 1.0.9-2build6 [315 kB]     
+Get:8 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libjs-highlight.js all 9.18.5+dfsg1-1 [367 kB]
+Get:9 http://archive.ubuntu.com/ubuntu jammy/main amd64 libc-ares2 amd64 1.18.1-1build1 [44.9 kB]   
+Get:10 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libnode72 amd64 12.22.9~dfsg-1ubuntu3 [10.8 MB]
+Get:11 http://archive.ubuntu.com/ubuntu jammy/universe amd64 nodejs-doc all 12.22.9~dfsg-1ubuntu3 [2409 kB]
+Get:12 http://archive.ubuntu.com/ubuntu jammy/universe amd64 nodejs amd64 12.22.9~dfsg-1ubuntu3 [122 kB]
+Fetched 26.1 MB in 2min 3s (212 kB/s)                                                               
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package openssl.
+(Reading database ... 4395 files and directories currently installed.)
+Preparing to unpack .../00-openssl_3.0.2-0ubuntu1.7_amd64.deb ...
+Unpacking openssl (3.0.2-0ubuntu1.7) ...
+Selecting previously unselected package ca-certificates.
+Preparing to unpack .../01-ca-certificates_20211016_all.deb ...
+Unpacking ca-certificates (20211016) ...
+Selecting previously unselected package libicu70:amd64.
+Preparing to unpack .../02-libicu70_70.1-2_amd64.deb ...
+Unpacking libicu70:amd64 (70.1-2) ...
+Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../03-libnghttp2-14_1.43.0-1build3_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.43.0-1build3) ...
+Selecting previously unselected package libuv1:amd64.
+Preparing to unpack .../04-libuv1_1.43.0-1_amd64.deb ...
+Unpacking libuv1:amd64 (1.43.0-1) ...
+Selecting previously unselected package javascript-common.
+Preparing to unpack .../05-javascript-common_11+nmu1_all.deb ...
+Unpacking javascript-common (11+nmu1) ...
+Selecting previously unselected package libbrotli1:amd64.
+Preparing to unpack .../06-libbrotli1_1.0.9-2build6_amd64.deb ...
+Unpacking libbrotli1:amd64 (1.0.9-2build6) ...
+Selecting previously unselected package libjs-highlight.js.
+Preparing to unpack .../07-libjs-highlight.js_9.18.5+dfsg1-1_all.deb ...
+Unpacking libjs-highlight.js (9.18.5+dfsg1-1) ...
+Selecting previously unselected package libc-ares2:amd64.
+Preparing to unpack .../08-libc-ares2_1.18.1-1build1_amd64.deb ...
+Unpacking libc-ares2:amd64 (1.18.1-1build1) ...
+Selecting previously unselected package libnode72:amd64.
+Preparing to unpack .../09-libnode72_12.22.9~dfsg-1ubuntu3_amd64.deb ...
+Unpacking libnode72:amd64 (12.22.9~dfsg-1ubuntu3) ...
+Selecting previously unselected package nodejs-doc.
+Preparing to unpack .../10-nodejs-doc_12.22.9~dfsg-1ubuntu3_all.deb ...
+Unpacking nodejs-doc (12.22.9~dfsg-1ubuntu3) ...
+Selecting previously unselected package nodejs.
+Preparing to unpack .../11-nodejs_12.22.9~dfsg-1ubuntu3_amd64.deb ...
+Unpacking nodejs (12.22.9~dfsg-1ubuntu3) ...
+Setting up javascript-common (11+nmu1) ...
+Setting up libbrotli1:amd64 (1.0.9-2build6) ...
+Setting up libnghttp2-14:amd64 (1.43.0-1build3) ...
+Setting up libc-ares2:amd64 (1.18.1-1build1) ...
+Setting up libuv1:amd64 (1.43.0-1) ...
+Setting up libjs-highlight.js (9.18.5+dfsg1-1) ...
+Setting up openssl (3.0.2-0ubuntu1.7) ...
+Setting up libicu70:amd64 (70.1-2) ...
+Setting up libnode72:amd64 (12.22.9~dfsg-1ubuntu3) ...
+Setting up ca-certificates (20211016) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at
+ /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 78.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (
+@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.34.0 /usr/local/share/perl/5.34.0 /us
+r/lib/x86_64-linux-gnu/perl5/5.34 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_6
+4-linux-gnu/perl/5.34 /usr/share/perl/5.34 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/Fron
+tEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Updating certificates in /etc/ssl/certs...
+127 added, 0 removed; done.
+Setting up nodejs-doc (12.22.9~dfsg-1ubuntu3) ...
+Setting up nodejs (12.22.9~dfsg-1ubuntu3) ...
+update-alternatives: using /usr/bin/nodejs to provide /usr/bin/js (js) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/js.1.gz because associated file /u
+sr/share/man/man1/nodejs.1.gz (of link group js) doesn't exist
+Processing triggers for libc-bin (2.35-0ubuntu3.1) ...
+Processing triggers for ca-certificates (20211016) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+root@cd43fb20feb1:/# node -v
+v12.22.9
+root@cd43fb20feb1:/# exit
+exit
+sayana@sayana-ASUS-TUF-Gaming-F15-FX506HC-FX506HC:~$ docker ps
+CONTAINER ID   IMAGE               COMMAND     CREATED          STATUS          PORTS     NAMES
+41d0b66bf32d   python:3.8-alpine   "python3"   45 minutes ago   Up 45 minutes             thirsty_ardinghelli
+sayana@sayana-ASUS-TUF-Gaming-F15-FX506HC-FX506HC:~$ docker ps -a
+CONTAINER ID   IMAGE               COMMAND     CREATED          STATUS                      PORTS     NAMES
+cd43fb20feb1   ubuntu              "bash"      7 minutes ago    Exited (0) 56 seconds ago             elastic_kapitsa
+47165c39365f   hello-world         "/hello"    14 minutes ago   Exited (0) 14 minutes ago             sad_cerf
+41d0b66bf32d   python:3.8-alpine   "python3"   46 minutes ago   Up 46 minutes                         thirsty_ardinghelli
+sayana@sayana-ASUS-TUF-Gaming-F15-FX506HC-FX506HC:~$ docker ps -l
+CONTAINER ID   IMAGE     COMMAND   CREATED         STATUS                          PORTS     NAMES
+cd43fb20feb1   ubuntu    "bash"    7 minutes ago   Exited (0) About a minute ago             elastic_kapitsa
+sayana@sayana-ASUS-TUF-Gaming-F15-FX506HC-FX506HC:~$ docker start cd43fb20feb1
+cd43fb20feb1
+sayana@sayana-ASUS-TUF-Gaming-F15-FX506HC-FX506HC:~$ docker bash
+docker: 'bash' is not a docker command.
+See 'docker --help'
+sayana@sayana-ASUS-TUF-Gaming-F15-FX506HC-FX506HC:~$ docker ps
+CONTAINER ID   IMAGE               COMMAND     CREATED          STATUS          PORTS     NAMES
+cd43fb20feb1   ubuntu              "bash"      9 minutes ago    Up 55 seconds             elastic_kapitsa
+41d0b66bf32d   python:3.8-alpine   "python3"   49 minutes ago   Up 49 minutes             thirsty_ardinghelli
+sayana@sayana-ASUS-TUF-Gaming-F15-FX506HC-FX506HC:~$ docker stop elastic_kapitsa
+elastic_kapitsa
+sayana@sayana-ASUS-TUF-Gaming-F15-FX506HC-FX506HC:~$ docker commit -m "added Node.js" -a "Sayana0000" cd43fb20feb1 Sayana0000/ubuntu-nodejs
+invalid reference format: repository name must be lowercase
+sayana@sayana-ASUS-TUF-Gaming-F15-FX506HC-FX506HC:~$ docker commit -m "added Node.js" -a "sayana0000" cd43fb20feb1 sayana0000/ubuntu-nodejs
+sha256:ebbb22c3a23774292a8664e2401bf705d535b4f5851e6b6d2b93a746fea21b49
+sayana@sayana-ASUS-TUF-Gaming-F15-FX506HC-FX506HC:~$ docker images
+REPOSITORY                 TAG          IMAGE ID       CREATED          SIZE
+sayana0000/ubuntu-nodejs   latest       ebbb22c3a237   47 seconds ago   201MB
+ubuntu                     latest       a8780b506fa4   4 days ago       77.8MB
+python                     3.8-alpine   dd03d220144d   13 days ago      46.8MB
+hello-world                latest       feb5d9fea6a5   13 months ago    13.3kB
+sayana@sayana-ASUS-TUF-Gaming-F15-FX506HC-FX506HC:~$ 
+
