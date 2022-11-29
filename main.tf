@@ -1,16 +1,3 @@
-# provider "aws" {
-#     region = "us-east-1"
-# }
-
-# resource "aws_vpc" "myvpc" {
-#     cidr_block = "10.0.0.0/16"
-
-#     tags = {
-#         Name = "ExampleAppServerInstance"
-#     }
-# }
-
-
 terraform {
   required_providers {
     aws = {
@@ -23,21 +10,27 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-west-2"
+  region     = "us-west-2"
 }
+
 
 resource "aws_db_instance" "rds_instance" {
 allocated_storage = 20
-identifier = "alibek"
+identifier = "rds-terraform"
 storage_type = "gp2"
-engine = "postgres"
-engine_version = "12.5"
+engine = "mysql"
+engine_version = "8.0.27"
 instance_class = "db.t2.micro"
-db_name = "alibek"
-username = ""
-password = ""
+name = "student_db"
+username = "student123"
+password = "student123"
 publicly_accessible    = true
 skip_final_snapshot    = true
+
+
+  tags = {
+    Name = "My RDC DB"
+  }
 }
 
 resource "aws_instance" "app_server" {
@@ -45,7 +38,6 @@ resource "aws_instance" "app_server" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "ExampleAppServerInstance"
+    Name = "My AWS db"
   }
 }
-
